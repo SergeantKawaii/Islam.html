@@ -28,7 +28,3 @@ return closeMenu()  }
 
 
 
-function Timer {
-
-  setTimeout()
-}
