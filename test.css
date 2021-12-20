@@ -47,7 +47,7 @@ font-size:20px;
 
 
 
-.main-menu:hover,nav.main-menu.expanded {
+/*.main-menu:hover,nav.main-menu.expanded {
 width: 170px;
 overflow:visible;
 }
@@ -68,8 +68,8 @@ overflow:visible;
 /*-webkit-transition:width 0.5s linear;*/
 /*-webkit-transform:translateZ(0) scale(1,1);
 z-index:1000; */
-}
-
+/*}
+/*
 .main-menu>ul {
 margin:7px 0;
 }
@@ -90,10 +90,10 @@ color:#999;
 font-size: 14px;
 text-decoration:none;
 /*-webkit-transform:translateZ(0) scale(1,1);
-*/-webkit-transition:all .1s linear;
+-webkit-transition:all .1s linear;
 transition:all .1s linear;
   
-}
+/*}
 
 .main-menu .nav-icon {
 position:relative;
@@ -142,7 +142,7 @@ user-select:none;
 
 nav ul,nav li {
 outline:0;
-margin:0;
+margin:0 0 10;
 padding:0;
 }
 .main-menu li:hover>a,nav.main-menu li.active>a,.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus,.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,.dashboard-page nav.dashboard-menu ul li.active a {
@@ -162,58 +162,13 @@ height: 100%;
   src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
 }
 
-
+*/
 
   
   
-  
-  .oldKaaba{
-
-    float:right;
-     border: 4px solid rgb(166, 255, 0);
-    margin-right:60px;
-    
-
-    }
-    
 
 
 
-
-
-
-
-
-/*
-.sidebar{
-    width: 160px;
-    height:100%;
-    position:absolute;
-    
-        background-color: rgb(44, 12, 12);
-        position: fixed;
-                                /*this fucked up your code xD /*margin-top:  -690px;*/
-       /* color:white;
-        top: 0;
-        left: 0;
-        padding-top:20px;
-        z-index: 3;
-    
-    
-    }
-    
-    .sidebar a {
-        
-    color: gold;
-    font-size: 20px;
-   
-    }
-    
-    .sidebar a:hover{
-        
-        color: rgb(55, 0, 255);
-    }                                   
-   */
    
    .main{
     
@@ -221,6 +176,15 @@ height: 100%;
     
 }
     
+.oldKaaba{
+
+  float:right;
+  border-right: 4px dotted rgb(166, 255, 0); 
+  border-left: 4px dotted rgb(166, 255, 0); 
+  margin-right:150px;
+  
+
+  }
     
 
     
@@ -374,3 +338,79 @@ cornflowerblue
 
 */
 
+
+
+
+                                                /* NEW SIDE BAR !! */
+
+.sidebar {
+
+  height: 100%;
+  width: 0;
+  position:fixed;
+  top:0;
+  left:0;
+background: red;
+float:left;
+padding-top: 90px;
+z-index: 2;
+}
+
+
+  
+  
+  
+  
+  .sidebar a {
+    font-size:25px;
+  color: red;
+  font-size: 20px;
+ 
+  }
+  
+  .sidebar a:hover{
+      
+      color: rgb(55, 0, 255);
+  }                
+  
+  
+ 
+  .openbutton:hover {
+    background-color: #444;
+    font-weight:bold;
+  }
+  .closebutton:hover {
+    background-color: #444;
+    font-weight:bold;
+  }
+  
+
+  .openbutton {
+    background-color: red;
+    font-size: 17px;
+    cursor: pointer;
+    color: white;
+    padding: 1px 1px;
+    border: none;
+    float:left;
+  }
+
+  .closebutton {
+    background-color: red;
+    font-size: 17px;
+    cursor: pointer;
+    color: white;
+    padding: 1px 1px;
+    border: none;
+    float:left;
+    margin-left:10px;
+  }
+
+
+
+
+ #button {
+   float:left;
+   margin-top:-250px;
+
+ }

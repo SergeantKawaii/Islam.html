@@ -1,30 +1,18 @@
-//var test = document.getElementsByClassName("test")
-//var anothertest = document.getElementById("Hajj")
 
-//<button type="button"
-//onclick="document.getElementById('demo').innerHTML = Date()">
-//Click me to display Date and Time.</button>;
 
-function closeTab(){
-document.getElementById('buttonSideBar').style.visibility = hidden;
-}
 
-function openTab(){
-  document.getElementsByName('buttonSideBar').style.visibility = visible;
+
+
+
+function openSidebar() {
+
+  document.getElementById("MySidebar").style.width = "300px";
 }
 
 
+function closeSidebar() {
 
- //this code is supposed to open and close sidebar, it's just experimentation not actually working idek if it'll work
- 
+document.getElementById("MySidebar").style.width = "0";
 
-
-
-if (closedMenu() === true) {
-return openMenu() }
-else if  (openMenu() === true) {
-return closeMenu()  }
-
-
-
+}
 
