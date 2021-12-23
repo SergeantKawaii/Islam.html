@@ -193,7 +193,7 @@ height: 100%;
       text-align: center;
         font-size: 60px;
         font-style:oblique;
-        z-index: 2;
+        z-index: 0;
         position:relative;
         
            
@@ -350,10 +350,10 @@ cornflowerblue
   position:fixed;
   top:0;
   left:0;
-background: red;
-float:left;
+background-color: red;
 padding-top: 90px;
-z-index: 2;
+z-index: 1;
+overflow-x: hidden;
 }
 
 
@@ -362,19 +362,25 @@ z-index: 2;
   
   
   .sidebar a {
-    font-size:25px;
-  color: red;
-  font-size: 20px;
+
+    font-size:30px;
+  transition: 0.5s;
+  
+  
  
   }
   
   .sidebar a:hover{
       
-      color: rgb(55, 0, 255);
+      color: rgb(187, 52, 42);
   }                
   
   
- 
+  #sidebarButton {
+
+  }
+
+
   .openbutton:hover {
     background-color: #444;
     font-weight:bold;
@@ -382,10 +388,24 @@ z-index: 2;
   .closebutton:hover {
     background-color: #444;
     font-weight:bold;
-  }
+  } 
   
+ 
+  .openbutton {                      /* sdiebar button */
+    background-color: red;
+    font-size: 17px;
+    cursor: pointer;
+    color: white;
+    padding: 1px 1px;
+    border: none;
+    top:120px;
+    left:120px;
+    position:fixed;
+    
+  }
 
-  .openbutton {
+  .closebutton                      /* sdiebar button */
+   {
     background-color: red;
     font-size: 17px;
     cursor: pointer;
@@ -393,24 +413,8 @@ z-index: 2;
     padding: 1px 1px;
     border: none;
     float:left;
+    top:120px;
+    left:0;
+    position:fixed;
   }
 
-  .closebutton {
-    background-color: red;
-    font-size: 17px;
-    cursor: pointer;
-    color: white;
-    padding: 1px 1px;
-    border: none;
-    float:left;
-    margin-left:10px;
-  }
-
-
-
-
- #button {
-   float:left;
-   margin-top:-250px;
-
- }
