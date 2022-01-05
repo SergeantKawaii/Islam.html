@@ -12,7 +12,7 @@ function openSidebar() {
 
 function closeSidebar() {
 
-document.getElementById("MySidebar").style.width = "0";
+document.getElementById("MySidebar").style.width = "5px";
 
 }
 
