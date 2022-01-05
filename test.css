@@ -1,6 +1,17 @@
 @import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
 
 @import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
+
+
+
+html {
+  scroll-behavior: smooth;
+  
+}
+
+
+
+
 .fa-2x {
 font-size: 2em;
 }
@@ -32,6 +43,7 @@ font-size:20px;
 
 #black-Area-Top {
 
+  left:0;
   top:0;
   width:100%;
   border-bottom: 3px solid brown;
@@ -350,10 +362,14 @@ cornflowerblue
   position:fixed;
   top:0;
   left:0;
-background-color: red;
-padding-top: 90px;
+background-color: rgb(0, 0, 0);
+padding-top: 60px;
 z-index: 1;
 overflow-x: hidden;
+/*font-size: 10px; */
+border-right: solid brown 6px;
+transition:0.7s;
+
 }
 
 
@@ -363,8 +379,14 @@ overflow-x: hidden;
   
   .sidebar a {
 
-    font-size:30px;
-  transition: 0.5s;
+    font-size:25px;
+  transition: 0.5s;  /* transitions colour wheen you hover over the words*/
+  float:left;
+  padding: 6px;
+  color:rgb(76, 173, 202);
+  /*border-left: solid black 6px; */
+  
+
   
   
  
@@ -373,6 +395,7 @@ overflow-x: hidden;
   .sidebar a:hover{
       
       color: rgb(187, 52, 42);
+      border-left:dotted red 6px;
   }                
   
   
@@ -381,8 +404,8 @@ overflow-x: hidden;
   }
 
 
-  .openbutton:hover {
-    background-color: #444;
+  .openbutton:hover {                 
+    background-color: #444;                                 /* make buttons one button*/
     font-weight:bold;
   }
   .closebutton:hover {
@@ -401,6 +424,7 @@ overflow-x: hidden;
     top:120px;
     left:120px;
     position:fixed;
+    transition: .2s;
     
   }
 
@@ -413,8 +437,9 @@ overflow-x: hidden;
     padding: 1px 1px;
     border: none;
     float:left;
-    top:120px;
-    left:0;
+    top:160px;
+   left:120px;
     position:fixed;
+    transition:.2s;
   }
 
